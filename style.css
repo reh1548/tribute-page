@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    grid-gap: 15px;
+}
+.header{
+    background-color: #d5071b;
+    text-align: center;
+    padding: 20px 5px;
+    font-family: 'Special Elite', cursive;
+    margin: 10px;
+    box-shadow: 7px 10px;
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: 10px auto;
+    display: block;
+    
+}
+#img-caption{
+    text-align: center;
+    font-weight: bolder;
+}
+#tribute-info{
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    margin: 20px;
+}
+@media only screen and (max-width: 650px) {
+    #tribute-info{
+        display: grid;
+        grid-template: repeat(2, 1fr) / 1fr;
+        margin: 5px 20px;
+    }
+
+    #tribute-info-block{
+        padding: 20px;
+        background-color: #d5071b;
+        box-shadow: 7px 10px;
+        margin: 10px;
+        height: fit-content;
+    }
+}
+#tribute-info-block{
+    padding: 20px;
+    background-color: #d5071b;
+    box-shadow: 7px 10px;
+    margin: 10px;
+    
+}
+.footer{
+    
+    padding: 40px 5px;
+    background-color: black;
+    margin:  5px 10px;
+    box-shadow: 7px 8px red;
+    color: #d5071b;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+}
+#tribute-link{
+    text-decoration: none;
+    color: white;
+}
+#tribute-link:hover{
+    text-decoration:underline 3px solid white;
+    color: #d5071b;
+}
